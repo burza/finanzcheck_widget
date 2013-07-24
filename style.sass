@@ -1,6 +1,20 @@
-$font-color: #333333
-$blue: #00BCF2
+// 1,267
 
+
+$lighter-blue: #f2f3f5
+$light-blue: #c5cfe0
+// #e2e7f0
+$violett: #6e7fb9
+$dark-violett: #314793
+
+$light-orange: #fc9464
+$dark-orange: #f05513
+
+$light-grey: #efefef
+$grey: #CCC
+$dark-blue-grey: #576975
+
+$font-color: $dark-blue-grey
 
 *
   -webkit-tap-highlight-color: transparent
@@ -23,7 +37,7 @@ body
   line-height: 1
   font-family: Arial, sans-serif
   font-weight: 300
-  font-size: 16px
+  font-size: 14px
   color: $font-color
   overflow-y: scroll
   overflow-x: hidden
@@ -70,5 +84,97 @@ table
   //body
   //  border: 5px solid pink
     
-
+=clearfix
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
     
+#container
+  width: 350px
+  min-height: 400px
+  margin: 5%
+
+#fc-cc-widget-wrapper
+  color: $font-color
+  background:
+    color: $lighter-blue
+    image: url('img/wim_frei.png')
+    size: 106px 58px, 130px 165px, 100% 100%
+    position: 7% 93%, 95% 100%, top left
+    repeat: no-repeat, no-repeat, repeat
+
+  background-image: url('img/ratenkredit_small.jpg'), url('img/wim_frei.png'), linear-gradient(bottom, $light-blue, $lighter-blue)
+  background-image: url('img/ratenkredit_small.jpg'), url('img/wim_frei.png'), -o-linear-gradient(bottom, $light-blue, $lighter-blue)
+  background-image: url('img/ratenkredit_small.jpg'), url('img/wim_frei.png'), -moz-linear-gradient(bottom, $light-blue, $lighter-blue)
+  background-image: url('img/ratenkredit_small.jpg'), url('img/wim_frei.png'), -webkit-linear-gradient(bottom, $light-blue, $lighter-blue)
+  background-image: url('img/ratenkredit_small.jpg'), url('img/wim_frei.png'), -ms-linear-gradient(bottom, $light-blue, $lighter-blue)
+
+  width: 100%
+  min-height: 200px
+  border: 1px solid $grey
+  -webkit-border-radius: 5px
+  -moz-border-radius: 5px
+  border-radius: 5px
+  h2.fc-ccw-mainhead
+    color: $font-color
+    font-weight: 700
+    font-size: 22px
+    padding: 0px 5%
+    margin: 20px 0 10px 0
+    width: 90%  
+  h3.fc-ccw-subhead
+    color: $font-color
+    font-weight: 400
+    padding: 0px 5%
+    margin: 10px 0 24px 0  
+  form#fc-ccw-form 
+    .fc-ccw-field-row
+      +clearfix
+      padding: 0px 5%
+      margin-bottom: 10px
+      &.last
+        margin-bottom: 40px
+      label
+        display: block
+        margin-bottom: 5px
+      .ff-ccw-field
+        float: left
+        width: 47%
+        margin-right: 6%
+        &:last-child
+          margin-right: 0
+        input[type=text].ff-ccw-input
+          border: 1px solid $grey
+          padding: 2% 5%
+          width: 90%
+          font-size: 12px
+      select.fc-ccw-select
+        font-size: 12px
+        padding: 2% 5%
+    .fc-ccw-actions
+      +clearfix 
+      margin-bottom: 10px
+      padding: 0 5%
+      button.fc-ccw-submit-btn
+        float: right
+        border: none !important
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+        background-image: linear-gradient(bottom, $dark-orange, $light-orange)
+        background-image: -o-linear-gradient(bottom, $dark-orange, $light-orange)
+        background-image: -moz-linear-gradient(bottom, $dark-orange, $light-orange)
+        background-image: -webkit-linear-gradient(bottom, $dark-orange, $light-orange)
+        background-image: -ms-linear-gradient(bottom, $dark-orange, $light-orange)
+        font-weight: bold
+        font-size: 12px
+        color: white
+        padding: 9px 18px
+        &:hover
+          cursor: pointer
+          background: $light-orange
+        &:active
+          background: $dark-orange

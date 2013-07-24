@@ -19,8 +19,8 @@ body {
   line-height: 1;
   font-family: Arial, sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  color: #333333;
+  font-size: 14px;
+  color: #576975;
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch; }
@@ -49,3 +49,95 @@ table {
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+#container {
+  width: 350px;
+  min-height: 400px;
+  margin: 5%; }
+
+#fc-cc-widget-wrapper {
+  color: #576975;
+  background-color: #f2f3f5;
+  background-image: url("img/wim_frei.png");
+  background-size: 106px 58px, 130px 165px, 100% 100%;
+  background-position: 7% 93%, 95% 100%, top left;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-image: url("img/ratenkredit_small.jpg"), url("img/wim_frei.png"), linear-gradient(bottom, #c5cfe0, #f2f3f5);
+  background-image: url("img/ratenkredit_small.jpg"), url("img/wim_frei.png"), -o-linear-gradient(bottom, #c5cfe0, #f2f3f5);
+  background-image: url("img/ratenkredit_small.jpg"), url("img/wim_frei.png"), -moz-linear-gradient(bottom, #c5cfe0, #f2f3f5);
+  background-image: url("img/ratenkredit_small.jpg"), url("img/wim_frei.png"), -webkit-linear-gradient(bottom, #c5cfe0, #f2f3f5);
+  background-image: url("img/ratenkredit_small.jpg"), url("img/wim_frei.png"), -ms-linear-gradient(bottom, #c5cfe0, #f2f3f5);
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  #fc-cc-widget-wrapper h2.fc-ccw-mainhead {
+    color: #576975;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px 5%;
+    margin: 20px 0 10px 0;
+    width: 90%; }
+  #fc-cc-widget-wrapper h3.fc-ccw-subhead {
+    color: #576975;
+    font-weight: 400;
+    padding: 0px 5%;
+    margin: 10px 0 24px 0; }
+  #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row {
+    padding: 0px 5%;
+    margin-bottom: 10px; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row.last {
+      margin-bottom: 40px; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row label {
+      display: block;
+      margin-bottom: 5px; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row .ff-ccw-field {
+      float: left;
+      width: 47%;
+      margin-right: 6%; }
+      #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row .ff-ccw-field:last-child {
+        margin-right: 0; }
+      #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row .ff-ccw-field input[type=text].ff-ccw-input {
+        border: 1px solid #cccccc;
+        padding: 2% 5%;
+        width: 90%;
+        font-size: 12px; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-field-row select.fc-ccw-select {
+      font-size: 12px;
+      padding: 2% 5%; }
+  #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-actions {
+    margin-bottom: 10px;
+    padding: 0 5%; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-actions:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-actions button.fc-ccw-submit-btn {
+      float: right;
+      border: none !important;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-image: linear-gradient(bottom, #f05513, #fc9464);
+      background-image: -o-linear-gradient(bottom, #f05513, #fc9464);
+      background-image: -moz-linear-gradient(bottom, #f05513, #fc9464);
+      background-image: -webkit-linear-gradient(bottom, #f05513, #fc9464);
+      background-image: -ms-linear-gradient(bottom, #f05513, #fc9464);
+      font-weight: bold;
+      font-size: 12px;
+      color: white;
+      padding: 9px 18px; }
+      #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-actions button.fc-ccw-submit-btn:hover {
+        cursor: pointer;
+        background: #fc9464; }
+      #fc-cc-widget-wrapper form#fc-ccw-form .fc-ccw-actions button.fc-ccw-submit-btn:active {
+        background: #f05513; }
